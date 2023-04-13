@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contactanos</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+			text-align: center;
+		}
+		h1 {
+			margin: 0;
+		}
+		form {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			display: flex;
+			flex-direction: column;
+		}
+		label {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-bottom: 10px;
+		}
+		input {
+			font-size: 16px;
+			padding: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			margin-bottom: 20px;
+		}
+		.btn {
+			display: block;
+			margin: 20px auto 0;
+			padding: 10px 20px;
+			background-color: #333;
+			color: #fff;
+			border: none;
+			border-radius: 5px;
+			font-size: 16px;
+			cursor: pointer;
+			width: 200px;
+		}
+
+		.btn:hover {
+            background-color: red;
+            text-decoration: underline;
+        }
+		
+		.success-message {
+			display: none;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			background-color: #7CFC00;
+			color: #fff;
+			padding: 10px;
+			border-radius: 0;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+			z-index: 9999;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<h1>Contactanos</h1>
+	</header>
+	<form onsubmit="enviarMensaje(); return false;">
+		<label for="correo">Correo:</label>
+		<input type="email" id="correo" name="correo" required>
+
+		<label for="message">Mensaje:</label>
+		<textarea id="message" name="message" rows="5" required></textarea>
+
+		<button class="btn" type="submit">Enviar</button>
+		<button class="btn" onclick="location.href='cano.html'">Regresar al inicio</button>
+	</form>
+	<div id="success-message" class="success-message">Tu mensaje ha sido enviado correctamente</div>
+	<script>
+		function enviarMensaje() {
+			document.getElementById("success-message").style.display = "block";
+			document.getElementById("correo").value = "";
+			document.getElementById("message").value = "";
+			document.getElementById("correo").focus();
+		}
+	</script>
+</body>
+</html>

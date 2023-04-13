@@ -1,0 +1,212 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F8F8F8;
+    color: #333;
+  }
+  
+  header, main, footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+  }
+  
+  header {
+    background-color: #002A5C;
+    color: #FFF;
+  }
+  
+  header h1 {
+    margin: 0;
+    text-align: center; /* Centro el título */
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Usamos flexbox para distribuir simétricamente */
+    justify-content: space-between; /* Centramos y distribuimos simétricamente */
+    align-items: center;
+  }
+  
+  nav li {
+    margin-right: 1em;
+  }
+  
+  nav a {
+    color: #FFF;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+
+  header nav ul li a {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 0 10px;
+  color: #fff;
+  background-color: #333;
+  text-decoration: none;
+}
+
+header nav ul li a:hover {
+  background-color: red;
+}
+
+header nav ul li a:active {
+  background-color: #777;
+}
+  
+  footer {
+    background-color: #CCC;
+    text-align: center;
+  }
+  
+  /* Estilos específicos para los formularios de registro e inicio de sesión */
+  form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 1em;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5em;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"],
+  form select {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #CCC;
+  }
+  
+  form input[type="submit"] {
+    background-color: #002A5C;
+    color: #FFF;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+  }
+  
+  /* Estilos para la tabla de resultados */
+  table {
+    border-collapse: collapse;
+    margin: 1em auto;
+  }
+  
+  table th, table td {
+    padding: 0.5em;
+    border: 1px solid #CCC;
+  }
+  
+  table th {
+    background-color: #002A5C;
+    color: #FFF;
+  }
+  
+  .banner {
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .banner img:hover {
+    transform: scale(1.1);
+  }
+  
+  .apartado {
+    display: flex;
+    margin: 50px 0;
+  }
+  
+  .imagen {
+    border: 1px solid black;
+    margin-right: 20px;
+    width: 400px;
+    height: 300px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .descripcion {
+    width: calc(100% - 320px);
+  }
+  
+  .descripcion h2 {
+    margin-top: 0;
+  }
+  
+  .descripcion p {
+    margin: 0;
+    text-align: justify;
+    line-height: 1.7;
+  }
+  .btn-contestar {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 10px 20px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  .btn-contestar:hover {
+    background-color: red;
+    text-decoration: underline;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: justify;
+    line-height: 1.23;
+  }
+
+  .btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: black;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 200px;
+  }
+
+  .btn:hover {
+    background-color: red;
+    text-decoration: underline;
+  }
+
+  .apartado {
+    border: 3px solid black;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .apartado h2, .apartado p {
+    margin: 10px;
+  }

@@ -1,0 +1,46 @@
+.banner {
+    display: flex;
+    overflow: hidden;
+    height: 300px;
+  }
+  
+  .banner img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+  }
+  
+  .banner img:hover {
+    transform: scale(1.1);
+  }
+  
+  .apartado {
+    display: flex;
+    margin: 50px 0;
+  }
+  
+  .imagen {
+    border: 1px solid black;
+    margin-right: 20px;
+    width: 300px;
+    height: 200px;
+  }
+  
+  .imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .descripcion {
+    width: calc(100% - 320px);
+  }
+  
+  .descripcion h2 {
+    margin-top: 0;
+  }
+  
+  .descripcion p {
+    margin: 0;
+  }
